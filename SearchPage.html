@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefMate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div id="image-container"> 
+                <img src="logo.png" id="logo">
+            </div>       
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="SearchPage.html">Recipes</a>           
+                <a href="#">About</a>
+            </nav>
+        </div>
+        <div id="searchContainer">
+            <h1 id="searchQuote">Explore your culinary journey!</h1>
+            <div id="searchBox">
+                <input type="text" id="sbox" placeholder="Enter food name or main ingredient here">
+                <button type="button" id="sb" onclick="search()"><img src="search.png"></button>
+            </div>
+            <div id="random_box">
+                <button type="button" id="suprise" onclick="random()">Suprise me!</button>
+            </div>
+        </div>
+        <div id="info" style="display: none;">
+            <div id="title"> </div>
+            <img src="" alt="Recipe image" id="foodImg" style="display: none;"  alt="photo">
+            <div id="area"></div>
+            <div id="ingr" style="display: none;"><b>Ingredients:</b></div>
+            <div id="ingredients"><ul id="ingredient_list" >      
+            </ul>
+            </div>
+            <div id="instructions"> </div>
+            
+          </div>
+        <div id="seachByFoodName" >
+            <div><img src="" id="recipe_img"></div>
+            <div id="recipe_title">Title:</div>
+            <div id="recipe_tags">Tags:</div>
+            <button type="button" id="view_recipe" onclick="viewRecipe()">View Recipe</button>
+        </div>
+
+    </header>
+    <footer>
+        Created by- Ameya Nimkar
+    </footer>
+    <script src="random.js" ></script>
+
+</body>
+</html>
